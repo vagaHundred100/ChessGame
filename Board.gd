@@ -129,7 +129,7 @@ func get_coordinates(pos,direction):
 	if is_out_of_border(coord):
 		return null
 	else:
-		if is_ocupaide(coord):
+		if is_ocupaide(coord) != null:
 			return null
 	return coord
 
