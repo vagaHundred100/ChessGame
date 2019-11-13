@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cell_Under_Hit.gd" type="Script" id=1]
+[ext_resource path="res://ColorRect.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40, 40 )
+
+[node name="Cell_Under_Hit" type="Area2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 80.0
+margin_bottom = 80.0
+color = Color( 0.768627, 0.0941176, 0.156863, 0.329412 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 40, 40 )
+shape = SubResource( 1 )
+[connection signal="input_event" from="." to="." method="_on_Cell_Under_Hit_input_event"]

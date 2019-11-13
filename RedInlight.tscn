@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="RedInlight" type="ColorRect"]
+margin_right = 80.0
+margin_bottom = 10.0
+color = Color( 0.945098, 0.0627451, 0.0627451, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 10.0
+margin_bottom = 80.0
+color = Color( 0.952941, 0.0745098, 0.0745098, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_top = 70.0
+margin_right = 80.0
+margin_bottom = 80.0
+color = Color( 0.972549, 0.0627451, 0.0627451, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 70.0
+margin_right = 80.0
+margin_bottom = 80.0
+color = Color( 0.952941, 0.0666667, 0.0666667, 1 )

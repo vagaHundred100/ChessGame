@@ -1,0 +1,157 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Board.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/rsz_2board.png" type="Texture" id=2]
+[ext_resource path="res://Figurs/Pawn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprites/chess-pawn-white.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/chess-pawn-black.png" type="Texture" id=5]
+[ext_resource path="res://Figurs/Rock.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprites/chess-rook-white.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/chess-rook-black.png" type="Texture" id=8]
+[ext_resource path="res://Figurs/Bishop.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Sprites/chess-bishop-white.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/chess-bishop-black.png" type="Texture" id=11]
+[ext_resource path="res://Figurs/Queen.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Sprites/chess-queen-white.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/chess-queen-black.png" type="Texture" id=14]
+[ext_resource path="res://Figurs/Knight.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprites/chess-knight-white.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/chess-knight-black.png" type="Texture" id=17]
+[ext_resource path="res://Figurs/King.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Sprites/chess-king-white.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/chess-king-black.png" type="Texture" id=20]
+
+[node name="Board" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2, 0 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Pawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1.50732, 82.9037 )
+texture = ExtResource( 4 )
+
+[node name="Pawn2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 80, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 160, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 400, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 320, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 240, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 480, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 560, 80 )
+texture = ExtResource( 4 )
+
+[node name="Pawn9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 480, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 560, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 400, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 320, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 240, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 160, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 80, 480 )
+texture = ExtResource( 5 )
+
+[node name="Pawn16" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 480 )
+texture = ExtResource( 5 )
+
+[node name="Rock" parent="." instance=ExtResource( 6 )]
+texture = ExtResource( 7 )
+
+[node name="Rock2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 560, 0 )
+texture = ExtResource( 7 )
+
+[node name="Rock3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 560, 560 )
+texture = ExtResource( 8 )
+
+[node name="Rock4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 0, 560 )
+texture = ExtResource( 8 )
+
+[node name="Bishop" parent="." instance=ExtResource( 9 )]
+position = Vector2( 160, 0 )
+texture = ExtResource( 10 )
+
+[node name="Bishop3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 160, 560 )
+texture = ExtResource( 11 )
+
+[node name="Bishop2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 400, 0 )
+texture = ExtResource( 10 )
+
+[node name="Bishop4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 400, 560 )
+texture = ExtResource( 11 )
+
+[node name="Queen" parent="." instance=ExtResource( 12 )]
+position = Vector2( 240, 0 )
+texture = ExtResource( 13 )
+
+[node name="Queen2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 240, 560 )
+texture = ExtResource( 14 )
+
+[node name="Knight" parent="." instance=ExtResource( 15 )]
+position = Vector2( 80, 0 )
+texture = ExtResource( 16 )
+
+[node name="Knight3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 80, 560 )
+texture = ExtResource( 17 )
+
+[node name="Knight2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 480, 0 )
+texture = ExtResource( 16 )
+
+[node name="Knight4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 480, 560 )
+texture = ExtResource( 17 )
+
+[node name="King" parent="." instance=ExtResource( 18 )]
+position = Vector2( 320, 0 )
+texture = ExtResource( 19 )
+
+[node name="King2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 320, 560 )
+texture = ExtResource( 20 )
